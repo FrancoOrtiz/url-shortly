@@ -1,0 +1,61 @@
+/* Imports */
+
+@import url("header.css");
+@import url("firstcontent.css");
+@import url("shorten.css");
+@import url("urlcontain.css");
+@import url("statistics.css");
+@import url("prefooter.css");
+@import url("footer.css");
+
+/* Reset Styles and Variables */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Poppins', sans-serif; /*500,700*/
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+:root{
+    --gray: hsl(0, 0%, 75%);
+    --grayishviolet: hsl(257, 7%, 63%);
+    --verydarkblue: hsl(255, 11%, 22%);
+    --verydarkviolet: hsl(260, 8%, 14%);
+    --red: hsl(0, 87%, 67%);
+    --cyan: hsl(180, 66%, 49%);
+    --darkviolet: hsl(257, 27%, 26%);
+}
+
+/* Reusable styles */
+
+.button{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: var(--cyan);
+    border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.button:focus{
+    outline: none;
+}
+
+.button:hover{
+    filter: brightness(1.5);
+}
+
+.nodisplay__url{
+    display: none;
+}

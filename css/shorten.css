@@ -1,0 +1,84 @@
+.shorten{
+    margin-top: 1.2em;
+}
+
+.shorten__contain{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkviolet);
+    background-image: url(/images/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 86%;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.shorten__input{
+    outline: none;
+    width: 85%;
+    margin: auto;
+    padding-left: 1em;
+    border-radius: 8px;
+    margin-top: 1.4em;
+    height: 3.0em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    transition: all 0.1s ease;
+}
+
+.input__valid{
+    color: rgb(169, 169, 171);
+    border: none;
+}
+
+.input__invalid{
+    border: 4px solid hsl(0, 87%, 67%);
+    color: hsl(0, 87%, 67%);
+}
+
+.shorten__button{
+    width: 85%;
+    margin: auto;
+    margin-top: 0.9em;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    font-weight: 500;
+    margin-bottom: 1.4em;
+    height: 2.7em;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 1000px) {
+    .shorten__contain{
+        background-image: url(/images/bg-shorten-desktop.svg);
+        background-size: cover;
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 175px;
+    }
+
+    .shorten__button{
+        margin: initial;
+        width: 16%;
+        font-size: 1.1em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 1em;
+        font-weight: 700;
+        height: 3.1em;
+    }
+
+    .shorten__input{
+        margin: initial;
+        margin-top: 0;
+        width: 70%;
+        height: 2.8em;
+        font-size: 1.2em;
+    }
+}

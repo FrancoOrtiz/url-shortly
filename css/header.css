@@ -1,0 +1,151 @@
+.header{
+    width: 100%;
+    height: 3.4em;
+}
+
+.navbar{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.navbar__logo{
+    width: 7em;
+    height: 2em;
+}
+
+.navbar__button{
+    height: 1.6em;
+    width: 1.6em;
+    filter: invert(60%) sepia(7%) saturate(190%) hue-rotate(182deg) brightness(89%) contrast(85%);
+}
+
+.navbar__sites{
+    display: none;
+}
+
+.navbar__buttons{
+    display: none;
+}
+
+.menu{
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 0.7em;
+    background-color: var(--darkviolet);
+    padding-top: 0.8em;
+}
+
+.menu-flex{
+    display: flex;
+}
+
+.menu-none{
+    display: none;
+}
+
+.menu a{
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 1em;
+}
+
+.menu__buttons{
+    width: 90%;
+    border-top: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu__login{
+    font-size: 1em;
+    font-weight: 700;
+    margin: 1.4em auto 0.6em;
+    border-radius: 0.7em;
+    border: none;
+    width: 10em;
+    color: white;
+    background-color: transparent;
+}
+
+.menu__sign{
+    font-size: 1em;
+    margin: 1em auto 1.6em;
+    border-radius: 2em;
+    color: white;
+    width: 90%;
+    padding: 0.7em 0;
+}
+
+/* media querys */
+
+@media screen and (min-width: 765px){
+    .navbar__button{
+        display: none;
+    }
+
+    .navbar{
+        width: 80%;
+    }
+
+    .navbar__sites{
+        display: flex;
+        width: 100%;
+    }
+
+    .navbar__sites a{
+        text-decoration: none;
+        color: var(--grayishviolet);
+        margin-left: 1.7em;
+        font-size: 0.8em;
+        font-weight: 700;
+        transition: all 1s ease;
+    }
+
+    .navbar__sites a:hover{
+        color: black;
+    }
+    
+    .navbar__buttons{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar__sign{
+        border-radius: 2em;
+        padding: 0.7em 2em;
+        cursor: pointer;
+        width: 8em;
+    }
+
+    .navbar__login{
+        border: none;
+        background: transparent;
+        padding: 0.7em 2.4em;
+        font-weight: 700;
+        color: var(--grayishviolet);
+        font-size: 0.8em;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .menu-flex{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .navbar__sites{
+        padding: 0 0 0 2em;
+    }
+}
